@@ -1,70 +1,16 @@
 <html>
   <head>
-Claro, puedo proporcionarte un código HTML básico para crear una escena de patio de colegio con árboles y bancos. Aquí tienes un ejemplo:
-
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Escena de Patio de Colegio</title>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #87CEEB; /* Color celeste para el cielo */
-    }
-    #patio {
-        position: relative;
-        width: 100%;
-        height: 500px; /* Altura del patio */
-        background-color: #32CD32; /* Color verde para el suelo */
-    }
-    .arbol {
-        position: absolute;
-        width: 100px; /* Ancho del árbol */
-        height: 200px; /* Altura del árbol */
-        background-color: #8B4513; /* Color marrón para el tronco */
-        bottom: 0;
-    }
-    .hojas {
-        width: 100px; /* Ancho de las hojas */
-        height: 100px; /* Altura de las hojas */
-        background-color: #228B22; /* Color verde para las hojas */
-        border-radius: 50%;
-    }
-    .banco {
-        position: absolute;
-        width: 200px; /* Ancho del banco */
-        height: 50px; /* Altura del banco */
-        background-color: #8B4513; /* Color marrón para el banco */
-        bottom: 0;
-    }
-</style>
-</head>
-<body>
-
-<div id="patio">
-    <!-- Árboles -->
-    <div class="arbol" style="left: 100px;"> <!-- Posición del primer árbol -->
-        <div class="hojas"></div>
-    </div>
-    <div class="arbol" style="left: 300px;"> <!-- Posición del segundo árbol -->
-        <div class="hojas"></div>
-    </div>
-    
-    <!-- Bancos -->
-    <div class="banco" style="left: 50px;"> <!-- Posición del primer banco -->
-    </div>
-    <div class="banco" style="left: 250px;"> <!-- Posición del segundo banco -->
-    </div>
-</div>
-
-</body>
-</html>
-```
-
-Este código crea una escena básica de un patio de colegio con árboles y bancos. Puedes ajustar los tamaños y posiciones según tus preferencias cambiando los valores en el CSS.
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="-1 0.5 -3" rotation="0 0 0" color="#4CC3D9"
+animation="property: position; to: 0 360 0; dur: 2000; easing: linear; loop: true" color="tomato"></a-box>
+</a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
   </body>
 </html>
